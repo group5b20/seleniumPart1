@@ -1,8 +1,8 @@
 package com.cybertek.bitrix.sergi;
 
-import com.cybertek.bitrix.pages.BitrixLoginPage;
-import com.cybertek.bitrix.pages.BitrixStreamPage;
-import com.cybertek.bitrix.verifications.BitrixVerifications;
+import com.cybertek.bitrix.config.pages.BitrixLoginPage;
+import com.cybertek.bitrix.config.pages.BitrixStreamPage;
+import com.cybertek.bitrix.config.verifications.BitrixVerifications;
 import com.cybertek.utilities.ConfigurationReader;
 import com.cybertek.utilities.Driver;
 import org.testng.annotations.Test;
