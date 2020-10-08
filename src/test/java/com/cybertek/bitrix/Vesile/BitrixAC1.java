@@ -12,8 +12,6 @@ import java.util.concurrent.TimeUnit;
 
 public class BitrixAC1 {
 
-    public class Project5{
-
         WebDriver driver;
 
         @BeforeMethod
@@ -96,4 +94,3 @@ public class BitrixAC1 {
         }
     }
 
-}
