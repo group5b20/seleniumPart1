@@ -1,14 +1,8 @@
-package com.cybertek.bitrix.verifications;
+package com.cybertek.bitrix.config.verifications;
 
-import com.cybertek.bitrix.pages.BitrixStreamPage;
+import com.cybertek.bitrix.config.pages.BitrixStreamPage;
 import com.cybertek.utilities.Driver;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.util.concurrent.TimeUnit;
 
 public class BitrixVerifications {
 
