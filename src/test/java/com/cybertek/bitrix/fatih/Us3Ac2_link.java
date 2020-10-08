@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-public class login {
+public class Us3Ac2_link {
 /*
 User Story – 3 As a user, I should be able to create events
 by clicking on Event tab under Activity Stream..
