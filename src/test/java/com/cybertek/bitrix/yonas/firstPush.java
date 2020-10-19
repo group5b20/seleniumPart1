@@ -1,6 +1,6 @@
 package com.cybertek.bitrix.yonas;
 
-public class firstpush {
+public class firstPush {
 
     public static void main(String[] args) {
 
