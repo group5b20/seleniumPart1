@@ -50,6 +50,8 @@ and entering the video URL.
         Driver.getDriver().findElement(By.id("linkoCalEditorcal_3Jcl-href")).sendKeys("https://github.com/group5b20/seleniumPart1", Keys.ENTER);
 
         //Verify whether we enter the right group name
+        Driver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        Driver.getDriver().switchTo().frame(1);
         WebElement link=Driver.getDriver().findElement(By.linkText("Group5"));
         String link1=link.getText();
         Assert.assertEquals(link1,"Group5","The link and the text were not properly insterted !!!");
