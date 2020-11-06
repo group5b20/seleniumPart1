@@ -48,7 +48,6 @@ public class VyTrackVerifications {
         String expectedTitle = "Vehicle Odometer - Entities - System - Car - Entities - System";
         String actualTitle = driver.getTitle();
         Assert.assertEquals(expectedTitle, actualTitle);
-        System.out.println("I add this line to make sure everything works fine!");
 
 
     }
