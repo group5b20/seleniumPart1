@@ -25,7 +25,7 @@ public class Hooks {
 //    this hook will run only before scenarios with a tag @db
 
     /**
-     * @db Scenario: I don't know but here I'm connecting to DB
+     *  Scenario: I don't know but here I'm connecting to DB
      * Given user runs following query "SELECT * ...."
      * <p>
      * order = 0 - to define hooks execution order
@@ -42,6 +42,8 @@ public class Hooks {
 
     @After
     public void tearDown(Scenario scenario) {
+        System.out.println(scenario.getName());
+        System.out.println(scenario.getStatus());
         //close browser, close DB connection, close tunnel,capture screenshot of the error, etc..
         //this is a hook after
         //runs automatically after every test
