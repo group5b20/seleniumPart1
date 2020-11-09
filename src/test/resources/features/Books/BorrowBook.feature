@@ -4,6 +4,6 @@ Feature: Borrow Book
   Scenario:student Borrowing book
     Given student is on the landing page
     When student logins with student credentials
-    When student clicks on "Book" module
+    When student clicks on Book module
     And student clicks on "Borrow Book" button
     Then student should be able to borrow a book
