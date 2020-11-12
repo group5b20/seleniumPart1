@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import java.util.concurrent.TimeUnit;
+
 public class Driver {
     private static WebDriver driver;
     private Driver() {}
@@ -23,6 +25,8 @@ public class Driver {
                 default:
                     throw new RuntimeException("No such a browser yet!");
             }
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            driver.manage().window().maximize();
         }
         return driver;
     }
