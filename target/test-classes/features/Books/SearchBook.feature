@@ -6,5 +6,5 @@ Feature:  As Librarian, I want to be able to search book by "Author and Name"
     When user logs in
     And user navigates to "Books"
     When user put information on search box
-      | Book Name      | The hunger games : the ultimate quiz book |
-      | Author          | Goldstein, Jack |
+      | Book Name | The hunger games : the ultimate quiz book |
+      | Author    | Goldstein, Jack                           |

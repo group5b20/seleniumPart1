@@ -8,8 +8,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "com/Librarian/step_definitions",
-        dryRun = false,
-        tags = "@edit_book",
+        dryRun = true,
+        tags = "@search_book",
         publish = true
 )
 public class CucumberRunner {

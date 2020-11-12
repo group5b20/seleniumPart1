@@ -22,6 +22,10 @@ public class BooksStepDefinitions {
 
     @When("user edit book information")
     public void user_edit_book_information() {
+    }
+
+    @When("user put information on search box")
+    public void user_put_information_on_search_box(io.cucumber.datatable.DataTable dataTable) {
 
     }
 
