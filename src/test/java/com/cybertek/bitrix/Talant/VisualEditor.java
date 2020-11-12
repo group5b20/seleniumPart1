@@ -48,12 +48,11 @@ public class VisualEditor {
 
     @Test
     //User should be able to add attendees by selecting contacts individually,add group and department
-    public void add_meeting_attendees()throws InterruptedException{
+    public void add_meeting_attendees(){
         //locate "Event" and click
         driver.findElement(By.xpath("//span[@id='feed-add-post-form-tab-calendar']")).click();
-        //Locate "Add person,group or department"
+        //Locate "Add person,group or department" and click
         driver.findElement(By.xpath("//a[@id='feed-event-dest-add-link']")).click();
-        BrowserUtils.wait(1);
         //Locate "Employee and Departments" and click
         driver.findElement(By.xpath("//a[@id='destDepartmentTab_calnAJEM3']")).click();
 
@@ -64,7 +63,8 @@ public class VisualEditor {
 
         //add Department and Click
         //IT Dropdown and Click
-        driver.findElement(By.xpath("//div[@class='bx-finder-company-department']//a//div[2]")).click();
+        WebElement itDropdown = driver.findElement(By.xpath("//div[@class='bx-finder-company-department']//a//div[2]"));
+        itDropdown.click();
         BrowserUtils.wait(1);
         WebElement department = driver.findElement(By.xpath("//span[@class='bx-finder-company-department-check-inner']//div[2]"));
         department.click();
